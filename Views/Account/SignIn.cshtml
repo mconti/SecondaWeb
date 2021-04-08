@@ -1,0 +1,44 @@
+@model Pasquinelli.Martina._5H.SecondaWeb.DTO.SigInDTO
+@{
+    ViewData["Title"] = "Registrazione di un nuovo utente";
+}
+
+<header>
+    <h2>SignIn</h2>
+    <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+</header>
+<section class="wrapper style5">
+    <div class="inner">
+
+        <section>
+            <div>
+                <div class="col-md-12">
+                    <form method="post" style="margin-left: 20%; margin-right:20%;">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ConfirmPassword"></label>
+                            <input asp-for="ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="form-group" style="margin-top:5%">
+                            <button type="submit" class="btn-primary">Registrati</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
