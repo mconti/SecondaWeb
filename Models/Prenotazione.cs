@@ -9,5 +9,6 @@ namespace Pasquinelli.Martina._5H.SecondaWeb.Models
       public string Email { get; set; }
       public string Telefono { get; set; }
       public bool? Partecipazione { get; set; } 
+      
   }
 }
